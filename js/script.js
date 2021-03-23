@@ -1,16 +1,24 @@
 var userNumberInput = parseInt(prompt("Inserica un numero"));
 var userNumberList = [];
+var listItem;
 
 for (var i = 1; i <= userNumberInput; i++) {
   if (i % 3 == 0 && i % 5 == 0) {
-    userNumberList.push("Fizzbuzz");
+    listItem = "FizzBuzz";
+    userNumberList.push(listItem);
   } else if (i % 5 == 0) {
-    userNumberList.push("Buzz");
+    listItem = "Buzz";
+    userNumberList.push(listItem);
   } else if (i % 3 == 0) {
-    userNumberList.push("Fizz");
+    listItem = "Fizz";
+    userNumberList.push(listItem);
   } else {
-    userNumberList.push(i);
+    listItem = i;
+    userNumberList.push(listItem);
   }
+
+  console.log(listItem);
+  document.getElementById("listFizzBuzz").innerHTML = listItem;
 }
 
 console.log(`Ecco la sua lista FizzBuzz: ${userNumberList}`);
