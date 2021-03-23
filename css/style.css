@@ -8,7 +8,15 @@ body {
   font-family: sans-serif;
 }
 
-#listFizzBuzz {
+main {
   max-width: 990px;
   margin: 0 auto;
+}
+
+textarea {
+  font-size: 14px;
+  width: 900px;
+  height: 300px;
+  padding: 20px;
+  border: none;
 }
