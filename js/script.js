@@ -18,7 +18,8 @@ for (var i = 1; i <= userNumberInput; i++) {
   }
 
   console.log(listItem);
-  document.getElementById("listFizzBuzz").innerHTML = listItem;
+  document.getElementById("listFizzBuzz").innerHTML +=
+    "Numero: " + listItem + "\n";
 }
 
 console.log(`Ecco la sua lista FizzBuzz: ${userNumberList}`);
