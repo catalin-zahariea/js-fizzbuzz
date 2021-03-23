@@ -13,8 +13,4 @@ for (var i = 1; i <= userNumberInput; i++) {
   }
 }
 
-document.getElementById(
-  "listFizzBuzz"
-).innerHTML = `Ecco la sua lista FizzBuzz: ${userNumberList}`;
-
 console.log(`Ecco la sua lista FizzBuzz: ${userNumberList}`);
